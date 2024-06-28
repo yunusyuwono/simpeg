@@ -7,6 +7,10 @@ import Profile from "../views/Profile.vue";
 import Signup from "../views/Signup.vue";
 import Signin from "../views/Signin.vue";
 import Pegawai from "../views/Pegawai.vue";
+import PegawaiTambah from "../views/PegawaiTambah.vue";
+import PegawaiEdit from "../views/PegawaiEdit.vue";
+import PegawaiDetail from "../views/PegawaiDetail.vue";
+import PegawaiHapus from "../views/PegawaiHapus.vue";
 
 const routes = [
   {
@@ -23,6 +27,26 @@ const routes = [
     path: "/pegawai",
     name: "Pegawai",
     component: Pegawai,
+  },
+  {
+    path: "/tambahpegawai",
+    name: "Tambah Pegawai",
+    component: PegawaiTambah,
+  },
+  {
+    path: "/editpegawai/:idpegawai",
+    name: "Edit Pegawai",
+    component: PegawaiEdit,
+  },
+  {
+    path: "/detailpegawai/:idpegawai",
+    name: "Detail Pegawai",
+    component: PegawaiDetail,
+  },
+  {
+    path: "/hapuspegawai/:idpegawai",
+    name: "Hapus Pegawai",
+    component: PegawaiHapus,
   },
   {
     path: "/billing",
